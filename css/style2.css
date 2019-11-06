@@ -1,0 +1,100 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: gray;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+    margin: 15px;
+    padding-top: 15px;
+    color: gray;
+}
+h2 {
+    font-size: 20px;
+    line-height: 22px;
+}
+h1 {
+    font-size: 26px;
+    line-height: 30px;
+}
+p {
+    font-size: 14px;
+    line-height: 20px;
+}
+#container {
+    width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+            'logo menu menu'
+            'content content content'
+            'content1 content2 content3'
+            'footer footer footer';
+}
+#logo, #menu{
+    background-image: url('../img/header_bg.png');
+    background-repeat: repeat-x;
+}
+#menu {
+    grid-area: menu;
+
+}
+#logo {
+    padding: 10px 10px 0px 10px;
+    grid-area: logo;c
+}
+#content {
+    background-image: url('../img/banner_bg.png');
+    background-repeat: repeat-x;
+    height: 425px;
+    grid-area: content;
+}
+#content img {
+    float: left;
+    margin: 15px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+#content:not(img){
+    float: right;
+    padding-right: 40px;
+    color: white;
+}
+.inhoud {
+    margin: 20px;
+    width: 300px;
+}
+.content1 {
+    grid-area: content1;
+}
+.content2 {
+    grid-area: content2;
+}
+.content3 {
+    grid-area: content3;
+}
+#footer {
+    background-image: url('../img/footer_bg.png');
+    background-repeat: repeat-x;
+    grid-area: footer;
+}
+#copyright {
+    text-align: center;
+    color: white;
+}
+img[src="../img/cool.jpg"] {
+    height: 320px;
+}
+.plaat {
+    margin: 15px;
+    height: 100px;
+    width: 275px;
+
+img[src="../img/lama.jpg"] {
+    height: 320px;
+}
